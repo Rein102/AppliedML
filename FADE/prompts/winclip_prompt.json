@@ -1,0 +1,20 @@
+{
+  "abnormal": {
+    "instruction": "",
+    "prompts": [
+      "a cropped photo of the damaged {classname}",
+      "a cropped photo of the {classname} with dirt",
+      "a cropped photo of the {classname} with dirt",
+      "a cropped photo of the {classname} with dirt"
+    ]
+  },
+  "normal": {
+    "instruction": "",
+    "prompts": [
+      "a cropped photo of the {classname}",
+      "a cropped photo of the flawless {classname}",
+      "a cropped photo of the perfect {classname}",
+      "a cropped photo of the unblemished {classname}"
+    ]
+  }
+}
