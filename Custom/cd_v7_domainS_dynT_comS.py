@@ -415,14 +415,8 @@ def main():
     y_true = np.concatenate(all_true)
     y_score = np.concatenate(all_score)
     y_pred = np.concatenate(all_pred)
-
-    print("\n=== Overall results ===")
-
-    if len(np.unique(y_true)) > 1:
-        print("AUC:", roc_auc_score(y_true, y_score))
-    else:
-        print("AUC skipped")
-
+    
+    print("AUC:", roc_auc_score(y_true, y_score))
     print("Precision:", precision_score(y_true, y_pred, zero_division=0))
     print("Recall:", recall_score(y_true, y_pred, zero_division=0))
     print("F1:", f1_score(y_true, y_pred, zero_division=0))
